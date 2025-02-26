@@ -5,123 +5,181 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="styles.css" />
+
+        <link rel="stylesheet" href="/common/common.css" />
+        <link rel="stylesheet" href="/common/font.css" />
+        <link rel="stylesheet" href="/common/ui.css" />
+        <link rel="stylesheet" href="/common/layout.css" />
+        <link rel="stylesheet" href="/common/main.css" />
     </head>
     <body>
         <!-- Header -->
-        <header>header</header>
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo-nav-wrapper">
+                    <img src="assets/headerLogo.svg" class="company-logo" />
+                    <nav class="main-navigation">
+                        <button class="nav-item">
+                            Product
+                            <img src="assets/headerArrow.svg" class="dropdown-icon" />
+                        </button>
+                        <button class="nav-item">
+                            Solutions
+                            <img src="assets/headerArrow.svg" class="dropdown-icon" />
+                        </button>
+                        <button class="nav-item resources-link">
+                            Resources
+                            <img src="assets/headerArrow.svg" class="dropdown-icon" />
+                        </button>
+                        <button class="nav-item enterprise-link">Enterprise</button>
+                        <button class="nav-item pricing-link">Pricing</button>
+                    </nav>
+                </div>
+                <div class="header-actions">
+                    <button class="language-selector">
+                        <img src="assets/headerGlobe.svg" alt="Language" class="language-icon" />
+                        <span>en</span>
+                    </button>
+                    <button class="contact-sales-btn">Contact Sales</button>
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign up free →</button>
+                </div>
+            </div>
+        </header>
 
-        <!-- main -->
-
-        <div>
-            <!-- Section 1 -->
-            <div class="signup-container">
-                <div class="signup-content">
-                    <h1 class="signup-heading">Take ideas from better to best</h1>
-                    <p class="signup-description">
+        <main class="main-section">
+            <section class="hero-content">
+                <div class="hero-text-container">
+                    <h1 class="hero-title">Take ideas from better to best</h1>
+                    <p class="hero-description">
                         Miro is your team's visual platform to connect, collaborate, and create — together.
                     </p>
                     <form class="signup-form">
-                        <input type="email" class="signup-input" placeholder="Enter your work email" />
+                        <input
+                            type="email"
+                            class="email-input"
+                            placeholder="Enter your work email"
+                            aria-label="Email input"
+                        />
                         <button type="submit" class="signup-button">Sign up free →</button>
                     </form>
-                    <p class="signup-note">Collaborate with your team within minutes</p>
-                    <div class="review-container">
-                        <div class="review-content">
-                            <div class="star-rating">
-                                <div class="rate-stars"></div>
-                                <div class="rate-stars"></div>
-                                <div class="rate-stars"></div>
-                                <div class="rate-stars"></div>
-                                <div class="rate-stars"></div>
+                    <p class="collaboration-text">Collaborate with your team within minutes</p>
+                    <div class="reviews-container">
+                        <div class="star-ratings">
+                            <div class="rating-stars">
+                                <img src="assets/Section 1/heroFullStar.svg" class="star-icon" />
+                                <img src="assets/Section 1/heroFullStar.svg" class="star-icon" />
+                                <img src="assets/Section 1/heroFullStar.svg" class="star-icon" />
+                                <img src="assets/Section 1/heroFullStar.svg" class="star-icon" />
+                                <img src="assets/Section 1/heroHalfStar.svg" class="star-icon" />
                             </div>
-                            <p class="review-text">Based on 5149+ reviews:</p>
+                            <p class="review-count">Based on 5149+ reviews:</p>
                         </div>
-                        <div class="review-logos">
-                            <div class="grey-square-logo"></div>
-                            <div class="grey-square-logo"></div>
-                            <div class="grey-square-logo"></div>
+                        <div class="review-platforms">
+                            <img
+                                src="assets/Section 1/heroRepLogo.svg"
+                                alt="Review platform"
+                                class="platform-logo g2"
+                            />
+                            <img
+                                src="assets/Section 1/heroGetAppLogo.svg"
+                                alt="Review platform"
+                                class="platform-logo capterra"
+                            />
+                            <img
+                                src="assets/Section 1/heroLetterLogo.svg"
+                                alt="Review platform"
+                                class="platform-logo trustpilot"
+                            />
                         </div>
                     </div>
                 </div>
-                <div class="image-container">
-                    <div class="main-image"></div>
-                    <div class="sub-images">
-                        <div class="sub-image"></div>
-                        <div class="sub-image"></div>
-                        <div class="sub-image"></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="box3-container">
-                    <p class="trusted-users-title">Trusted by 45M+ users</p>
-                    <div class="trusted-users-logos">
-                        <div class="logo-box"></div>
-                        <div class="logo-box"></div>
-                        <div class="logo-box"></div>
-                        <div class="logo-box"></div>
-                        <div class="logo-box"></div>
-                    </div>
-                </div>
-            </div>
+            </section>
+            <section class="hero-image">
+                <img src="assets/Section 1/headerimage-without-text.png.png" class="main-image" />
+            </section>
 
             <!-- Section 2 -->
-            <div class="collaborate-section">
-                <h2 class="collaborate-title">Collaborate without constraints</h2>
-                <div class="feature-container">
-                    <div class="feature-item">
-                        <h3 class="feature-title">Free forever</h3>
-                        <p class="feature-description">
-                            Unlimited team members, 3 boards, and 300+ templates. See our
-                            <span class="highlight-text">pricing plans</span> for more features.
-                        </p>
-                    </div>
-                    <div class="feature-item">
-                        <h3 class="feature-title">Easy integrations</h3>
-                        <p class="feature-description">
-                            Miro integrates with G Suite, Slack, and Jira. View the full list in our
-                            <span class="highlight-text">Marketplace</span>.
-                        </p>
-                    </div>
-                    <div class="feature-item">
-                        <h3 class="feature-title">Security first</h3>
-                        <p class="feature-description">
-                            We follow industry-leading security standards. Learn more at our
-                            <span class="highlight-text">Trust Center</span>.
-                        </p>
+            <section class="testimonial-section">
+                <div class="testimonial-container">
+                    <h2 class="testimonial-heading">Trusted by 45M+ users</h2>
+                    <div class="testimonial-logobox">
+                        <img src="assets/Section2/Walmart.svg" class="testimonial-logos" />
+                        <img src="assets/Section2/cisco.svg" class="testimonial-logos" />
+                        <img src="assets/Section2/Volvo.svg" class="testimonial-logos" />
+                        <img src="assets/Section2/deloitte.svg" class="testimonial-logos" />
+                        <img src="assets/Section2/okta.svg" class="testimonial-logos" />
                     </div>
                 </div>
-                <button class="cta-button">Sign Up Free</button>
-            </div>
+            </section>
 
             <!-- Section 3 -->
-            <div class="work-container">
-                <div class="work-text">
-                    <h2 class="work-title">Work together, wherever you work</h2>
-                    <p class="work-subtitle">
-                        In the office, remote, or a mix of the two, with Miro your team can connect, collaborate, and
-                        co-create in one space no matter where you are.
-                    </p>
-                    <p class="learn-more">Learn more</p>
+            <section class="collaborate-section">
+                <h2 class="collaborate-heading">
+                    <br />
+                    Collaborate without
+                    <br />
+                    constraints
+                </h2>
+                <div class="features-container">
+                    <article class="feature-card">
+                        <h3 class="feature-title">Free forever</h3>
+                        <p class="feature-description">
+                            Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates.
+                            Signing up with your work email lets you bring in your team faster. See our
+                            <a href="#" class="feature-link">pricing plans</a>
+                            for more features.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 class="feature-title">Easy integrations</h3>
+                        <p class="feature-description">
+                            Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and
+                            Jira, so your workflow is seamless. View the full list in our
+                            <a href="#" class="feature-link">Marketplace</a>
+                            .
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <h3 class="feature-title">Security first</h3>
+                        <p class="feature-description">
+                            We treat your data like you would — with the utmost care. We follow industry-leading
+                            security standards and give you tools to protect intellectual property. Learn more
+                            <br />
+                            at our
+                            <a href="#" class="feature-link">Trust Center</a>
+                            .
+                        </p>
+                    </article>
                 </div>
-
-                <div>
-                    <div class="work-images">
-                        <div class="image-box">Pic 1</div>
-                        <div>
-                            <div class="image-box">Pic 2</div>
-                            <div class="avatars">
-                                <div class="avatar"></div>
-                                <div class="avatar"></div>
-                                <div class="avatar-count">+98</div>
-                            </div>
-                        </div>
-                        <div class="image-box">Pic 3</div>
-                    </div>
-                </div>
-            </div>
+            </section>
 
             <!-- Section 4 -->
+            <section class="work-section">
+                <article class="content-wrapper">
+                    <div>
+                        <img
+                            src="assets/Section4/hybridwork.png.png"
+                            alt="Work together illustration"
+                            class="feature-image"
+                        />
+                    </div>
+
+                    <div class="text-content">
+                        <h2 class="heading">Work together, wherever you work</h2>
+                        <p class="description">
+                            In the office, remote, or a mix of the two, with Miro, your team can connect, collaborate,
+                            and co-create in one space no matter where you are.
+                        </p>
+                        <a href="#" class="learn-more-link">
+                            <span class="link-text">Learn more</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Section 5 -->
             <div class="integration-container">
                 <!-- Placeholder for the Image -->
                 <div class="integration-image"></div>
@@ -137,7 +195,7 @@
                 </div>
             </div>
 
-            <!-- Section 5 -->
+            <!-- Section 6 -->
 
             <div class="ways-we-work-container">
                 <div class="image-placeholder"></div>
@@ -254,16 +312,137 @@
                 </div>
             </div>
 
-            <!-- Section 9 -->
-            <div>
-                <div>join 45M + users today</div>
-                <div>start for forever</div>
-                <div>join as an orgainization</div>
-                <div>sign up free button</div>
-            </div>
-        </div>
+            <!-- Section 10 -->
+            <section class="cta-container">
+                <div class="cta-inner">
+                    <div class="cta-content">
+                        <h1 class="cta-heading">Join 45M+ users today</h1>
+                        <p class="cta-subheading">
+                            Start for free — upgrade anytime.
+                            <br />
+                        </p>
+                        <p class="cta-org-text">Joining as an organization? Contact Sales</p>
+                        <a href="#" class="cta-button">
+                            <span>Sign up free</span>
+                            <span class="button-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <!-- footer -->
-        <footer>footer</footer>
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <nav class="footer-navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <h2 class="nav-title">Product</h2>
+                            <div class="nav-content">
+                                <ul class="sub-nav-list">
+                                    <li>Online whiteboard</li>
+                                    <li class="sub-nav-item">Apps & Integrations</li>
+                                </ul>
+                                <div class="nav-link-wrapper">
+                                    <a href="#" class="underline-link">View demo</a>
+                                    <span class="arrow">→</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item solutions-section">
+                            <h2 class="nav-title">Solutions</h2>
+                            <ul class="sub-nav-list">
+                                <li>Meetings and Workshops</li>
+                                <li class="sub-nav-item">Brainstorming & Ideation</li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item solutions-section">
+                            <h2 class="nav-title">Solutions</h2>
+                            <ul class="sub-nav-list">
+                                <li>Meetings and Workshops</li>
+                                <li class="sub-nav-item">Brainstorming & Ideation</li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item solutions-section">
+                            <h2 class="nav-title">Solutions</h2>
+                            <ul class="sub-nav-list">
+                                <li>Meetings and Workshops</li>
+                                <li class="sub-nav-item">Brainstorming & Ideation</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item solutions-section">
+                            <h2 class="nav-title">Solutions</h2>
+                            <ul class="sub-nav-list">
+                                <li>Meetings and Workshops</li>
+                                <li class="sub-nav-item">Brainstorming & Ideation</li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item pricing-section">
+                            <h2 class="nav-title">Plans and Pricing</h2>
+                            <div class="nav-content">
+                                <ul class="sub-nav-list">
+                                    <li>Consultants</li>
+                                    <li class="sub-nav-item">NPOs</li>
+                                </ul>
+                                <div class="nav-link-wrapper">
+                                    <a href="#" class="underline-link">Contact sales</a>
+                                    <span class="arrow">→</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-info">
+                            <ul class="social-links">
+                                <li>
+                                    <img src="assets/Footer/fa.svg" class="social-icon" />
+                                </li>
+                                <li>
+                                    <img src="assets/Footer/in.svg" class="social-icon" />
+                                </li>
+                                <li>
+                                    <img src="assets/Footer/ins.svg" class="social-icon" />
+                                </li>
+                                <li>
+                                    <img src="assets/Footer/tw.svg" class="social-icon" />
+                                </li>
+                                <li>
+                                    <img src="assets/Footer/you.svg" class="social-icon" />
+                                </li>
+                            </ul>
+
+                            <div class="language-selector">
+                                <img src="assets/headerGlobe.svg" class="language-icon" />
+                                <span>en</span>
+                            </div>
+
+                            <div class="copyright">
+                                <span>© 2022</span>
+                                <span>Miro</span>
+                            </div>
+
+                            <nav class="legal-links">
+                                <a href="#" class="legal-link">Terms of Service</a>
+                                <a href="#" class="legal-link">Privacy Policy</a>
+                                <a href="#" class="legal-link">Manage Cookies</a>
+                            </nav>
+                        </div>
+
+                        <div class="certification-badges">
+                            <img src="assets/Footer/apple.png" alt="Certification badge" class="cert-badge" />
+                            <img src="assets/Footer/google.png" alt="Certification badge" class="cert-badge" />
+                            <img src="assets/Footer/logo.png" alt="Certification badge" class="cert-badge" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
